@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Book Pet</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+<style>
+.booking-card {
+    max-width: 900px;
+    margin: 40px auto;
+    border-radius: 10px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+    overflow: hidden;
+}
+.pet-img {
+    height: 100%;
+    object-fit: cover;
+}
+.form-control {
+    border-radius: 6px;
+}
+.book-btn {
+    background: #f4a300;
+    border: none;
+    padding: 12px;
+    font-weight: 600;
+}
+.book-btn:hover {
+    background: #e09b00;
+}
+.other-pets img {
+    height: 120px;
+    object-fit: cover;
+    border-radius: 8px;
+    transition: 0.3s;
+}
+.other-pets img:hover {
+    transform: scale(1.05);
+}
+</style>
+</head>
+
+<body>
+
+<div class="booking-card row g-0 bg-white">
+
+    
+    <div class="col-md-5">
+        <img src="<%= pet.dog_image %>" class="img-fluid pet-img w-100">
+    </div>
+
+    
+    <div class="col-md-7 p-4">
+        <h3 class="mb-3">Book <%= pet.dog_name %></h3>
+        <p class="text-muted">Fill details to confirm booking</p>
+
+        <form method="post" action="/save_booking">
+
+            <input type="hidden" name="pet_id" value="<%= pet.id %>">
+            <input type="hidden" name="pet_name" value="<%= pet.dog_name %>">
+
+            <div class="mb-3">
+                <label class="form-label">Your Name</label>
+                <input type="text" name="user_name" class="form-control" required>
+            </div>
+
+            <div class="mb-3">
+                <label class="form-label">Mobile Number</label>
+                <input type="text" name="user_mobile" class="form-control" required>
+            </div>
+
+            <button type="submit" class="btn book-btn w-100">
+                Confirm Booking
+            </button>
+        </form>
+    </div>
+</div>
+
+
+<div class="container my-5">
+    <h4 class="mb-4 text-center">Other Available Pets</h4>
+
+    <div class="row g-4 other-pets">
+        <% pets.forEach(p => { %>
+            <div class="col-md-3 col-6 text-center">
+                <a href="/book/<%= p.id %>">
+                    <img src="<%= p.dog_image %>" class="img-fluid">
+                </a>
+                <p class="mt-2 fw-semibold"><%= p.dog_name %></p>
+            </div>
+        <% }) %>
+    </div>
+</div>
+
+</body>
+</html>

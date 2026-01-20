@@ -1,0 +1,692 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Pet Care Website</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet">
+
+<style>
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+}
+
+
+.top-header {
+  padding: 15px 50px;
+}
+
+.logo {
+  font-size: 26px;
+  font-weight: bold;
+  color: #1f2d5a;
+}
+
+.logo span {
+  color: #f4a300;
+}
+
+.header-info i {
+  color: #f4a300;
+  font-size: 26px;
+}
+
+
+.navbar {
+  background: #1f2d5a;
+}
+
+.navbar-nav .nav-link {
+  color: white;
+  font-weight: 500;
+  margin: 0 8px;
+}
+
+.navbar-nav .nav-link.active,
+.navbar-nav .nav-link:hover {
+  color: #f4a300;
+}
+
+.social-icons i {
+  color: white;
+  margin-left: 10px;
+  font-size: 18px;
+}
+
+
+
+.hero img {
+  max-width: 100%;
+}
+</style>
+</head>
+
+<body>
+
+<!-- ================= TOP HEADER ================= -->
+<div class="top-header d-flex justify-content-between align-items-center">
+  <div class="logo">
+    <span>+</span> ROGER <small class="text-muted">Your Loving Pet Care</small>
+  </div>
+
+  <div class="d-flex gap-4">
+    <div class="header-info d-flex align-items-center gap-2">
+      <i class="fa-solid fa-headset"></i>
+      <div>
+        <strong>Call Us Now</strong><br>
+        +(528) 456-7592
+      </div>
+    </div>
+
+    <div class="header-info d-flex align-items-center gap-2">
+      <i class="fa-regular fa-clock"></i>
+      <div>
+        <strong>Opening Hours</strong><br>
+        Mon - Sat 9.00 - 19.00
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ================= NAVBAR ================= -->
+<nav class="navbar navbar-expand-lg">
+  <div class="container">
+    <ul class="navbar-nav me-auto">
+      <li class="nav-item"><a class="nav-link active" href="/">Home</a></li>
+      <li class="nav-item"><a class="nav-link" href="/about">About</a></li>
+      <li class="nav-item"><a class="nav-link" href="/services">Services</a></li>
+      <li class="nav-item"><a class="nav-link" href="/our_team">Our Team</a></li>
+      <li class="nav-item"><a class="nav-link" href="/blog">Blog</a></li>
+      <li class="nav-item"><a class="nav-link" href="/contact">Contact Us</a></li>
+    </ul>
+
+    <div class="social-icons">
+      <i class="fab fa-facebook-f"></i>
+      <i class="fab fa-x-twitter"></i>
+      <i class="fab fa-instagram"></i>
+      <i class="fab fa-linkedin-in"></i>
+      <i class="fab fa-youtube"></i>
+    </div>
+  </div>
+</nav>
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+
+            
+
+
+             
+<style>
+
+.about-banner {
+  background: linear-gradient(90deg, #05060d, #0b0e1a);
+  height: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: #fff;
+}
+
+.about-banner h1 {
+  font-size: 42px;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.breadcrumb-custom {
+  font-size: 16px;
+}
+
+.breadcrumb-custom a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.breadcrumb-custom span {
+  color: #f9b000;
+  font-weight: 500;
+}
+</style>
+</head>
+
+<body>
+
+
+<section class="about-banner">
+  <div>
+    <h1>Our Team</h1>
+    <div class="breadcrumb-custom">
+      <a href="#">Home</a> &nbsp; - &nbsp; <span>Our Team</span>
+    </div>
+  </div>
+</section>
+
+
+
+
+
+
+
+
+
+
+<style>
+.team-section {
+    padding: 60px 0;
+}
+
+.team-title small {
+    color: #777;
+}
+
+.team-title h2 {
+    font-weight: 700;
+    margin: 10px 0 40px;
+}
+
+
+.team-card {
+    position: relative;
+    overflow: hidden;
+    border-radius: 12px;
+}
+
+.team-card img {
+    width: 100%;
+    height: 260px;
+    object-fit: cover;
+    border-radius: 12px;
+}
+
+
+.team-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(33, 52, 90, 0.95);
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    opacity: 0;
+    transition: 0.4s ease;
+}
+
+
+.team-card:hover .team-overlay {
+    opacity: 1;
+}
+
+
+.team-overlay h4 {
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+
+.team-overlay p {
+    font-size: 14px;
+    margin-bottom: 15px;
+}
+
+
+.team-overlay .social i {
+    color: #ffb703;
+    font-size: 18px;
+    margin: 0 8px;
+    cursor: pointer;
+}
+</style>
+</head>
+
+<body>
+
+<section class="team-section">
+<div class="container">
+
+  
+    <div class="text-center team-title">
+        <small>Our Team</small>
+        <h2>Team Of Professional</h2>
+    </div>
+
+    
+    <div class="row g-4">
+
+        
+        <div class="col-md-4">
+            <div class="team-card">
+                <img src="imagess/doctor1.jpg">
+
+                <div class="team-overlay">
+                    <h4>Jackson</h4>
+                    <p>Projected Head</p>
+                    <p>Phone: +1 (123) 456-7890</p>
+
+                    <div class="social">
+                        <i class="fab fa-facebook-f"></i>
+                        <i class="fab fa-x-twitter"></i>
+                        <i class="fab fa-instagram"></i>
+                        <i class="fab fa-pinterest-p"></i>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        
+        <div class="col-md-4">
+            <div class="team-card">
+                <img src="imagess/doctor2.jpg">
+
+                <div class="team-overlay">
+                    <h4>Henna</h4>
+                    <p>Field Manager</p>
+                    <p>Phone:805859863</p>
+
+                    <div class="social">
+                        <i class="fab fa-facebook-f"></i>
+                        <i class="fab fa-x-twitter"></i>
+                        <i class="fab fa-instagram"></i>
+                        <i class="fab fa-pinterest-p"></i>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        
+        <div class="col-md-4">
+            <div class="team-card">
+                <img src="imagess/doctor3.webp">
+
+                <div class="team-overlay">
+                    <h4>Sofia John</h4>
+                    <p>Cooperator</p>
+                    <p>Phone: +1 (123) 456-7890</p>
+
+                    <div class="social">
+                        <i class="fab fa-facebook-f"></i>
+                        <i class="fab fa-x-twitter"></i>
+                        <i class="fab fa-instagram"></i>
+                        <i class="fab fa-pinterest-p"></i>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+
+
+
+        <div class="col-md-4">
+            <div class="team-card">
+                <img src="imagess/doctor4.jpg">
+
+                <div class="team-overlay">
+                    <h4>Peterson</h4>
+                    <p>Coordinator</p>
+                    <p>Phone: +1 (123) 456-7890</p>
+
+                    <div class="social">
+                        <i class="fab fa-facebook-f"></i>
+                        <i class="fab fa-x-twitter"></i>
+                        <i class="fab fa-instagram"></i>
+                        <i class="fab fa-pinterest-p"></i>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+
+
+
+
+       
+
+        <div class="col-md-4">
+            <div class="team-card">
+                <img src="imagess/doctor5.png">
+
+                <div class="team-overlay">
+                    <h4>Jackson</h4>
+                    <p>Coordinator</p>
+                    <p>Phone: +1 (123) 456-7890</p>
+
+                    <div class="social">
+                        <i class="fab fa-facebook-f"></i>
+                        <i class="fab fa-x-twitter"></i>
+                        <i class="fab fa-instagram"></i>
+                        <i class="fab fa-pinterest-p"></i>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+
+
+
+
+       
+
+        <div class="col-md-4">
+            <div class="team-card">
+                <img src="imagess/doctor6.jpg">
+
+                <div class="team-overlay">
+                    <h4>Johny</h4>
+                    <p>Coordinator</p>
+                    <p>Phone: +1 (123) 456-7890</p>
+
+                    <div class="social">
+                        <i class="fab fa-facebook-f"></i>
+                        <i class="fab fa-x-twitter"></i>
+                        <i class="fab fa-instagram"></i>
+                        <i class="fab fa-pinterest-p"></i>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+
+
+
+
+<!-- big image off services  -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Pet Care CTA</title>
+
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+<style>
+
+.pet-care-section{
+  padding:60px 0 0;
+  text-align:center;
+}
+
+
+.pet-img{
+  max-width:70%;
+  height:auto;
+  margin:auto;
+}
+
+
+.cta-bar{
+  background:#22355a;
+  color:#fff;
+  padding:35px 40px;
+  margin-top:40px;
+  border-radius:4px;
+}
+
+.cta-bar h2{
+  font-weight:700;
+  margin-bottom:10px;
+}
+
+.cta-bar p{
+  margin:0;
+  opacity:0.9;
+}
+
+
+.cta-btn{
+  background:#ffb703;
+  border:none;
+  color:#000;
+  font-weight:600;
+  padding:14px 28px;
+  border-radius:6px;
+  transition:0.3s;
+}
+
+.cta-btn:hover{
+  background:#fff;
+  transform: translateY(-2px);
+}
+</style>
+</head>
+
+<body>
+
+<section class="pet-care-section">
+  <div class="container">
+
+    
+    <div class="row justify-content-center">
+      <div class="col-lg-8">
+        <img src="imagess/doggy2.png"
+             class="pet-img"
+             alt="Vet with Dog">
+      </div>
+    </div>
+
+   
+    <div class="cta-bar d-flex flex-column flex-md-row justify-content-between align-items-center">
+      <div class="text-start">
+        <h2>Choose The Best Care For Yourself</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+      </div>
+      <div class="mt-3 mt-md-0">
+        <button class="cta-btn">Contact Us</button>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+
+
+
+
+
+
+
+<!-- fooooter section  -->
+
+
+
+<style>
+.footer {
+    background: #23395d;
+    color: #fff;
+    padding: 70px 0 0;
+    margin-top:8%;
+}
+
+.footer-logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.footer-logo i {
+    font-size: 30px;
+    color: #ffb703;
+}
+
+.footer-logo h4 {
+    margin: 0;
+    font-weight: 700;
+}
+
+.footer p {
+    color: #cfd6e0;
+    font-size: 15px;
+    line-height: 1.7;
+}
+
+.footer h5 {
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.footer ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer ul li {
+    margin-bottom: 12px;
+}
+
+.footer ul li a {
+    color: #cfd6e0;
+    text-decoration: none;
+}
+
+.footer ul li a::before {
+    content: "›";
+    color: #ffb703;
+    margin-right: 8px;
+}
+
+.footer ul li a:hover {
+    color: #ffb703;
+}
+
+
+.social-icons a {
+    width: 40px;
+    height: 40px;
+    border: 2px solid #ffb703;
+    border-radius: 50%;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    color: #ffb703;
+    margin-right: 10px;
+    text-decoration: none;
+}
+
+
+.newsletter input {
+    border-radius: 5px 0 0 5px;
+    border: none;
+    padding: 12px;
+    width: 100%;
+}
+
+.newsletter button {
+    background: #ffb703;
+    border: none;
+    padding: 0 20px;
+    color: #23395d;
+    border-radius: 0 5px 5px 0;
+}
+
+
+.footer-bottom {
+    border-top: 1px solid rgba(255,255,255,0.1);
+    margin-top: 50px;
+    padding: 20px 0;
+    text-align: center;
+    font-size: 14px;
+    color: #cfd6e0;
+}
+</style>
+</head>
+
+<body>
+
+<footer class="footer">
+<div class="container">
+<div class="row">
+
+    <!-- About -->
+    <div class="col-md-3 mb-4">
+        <div class="footer-logo mb-3">
+            <i class="fa-solid fa-paw"></i>
+            <div>
+                <h4>ROGER</h4>
+                <small>Your Loving Pet Care</small>
+            </div>
+        </div>
+        <p>
+            Lorem ipsum dolor sit amet, elit. Aenean ligula eget dolor.
+            Lorem ipsum dolor sit amet, consectetur to adipiscing elit.
+        </p>
+
+        <div class="social-icons mt-3">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-x-twitter"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+        </div>
+    </div>
+
+  
+    <div class="col-md-3 mb-4">
+        <h5>Services</h5>
+        <ul>
+            <li><a href="#">Dog Walking</a></li>
+            <li><a href="#">Overnight Care</a></li>
+            <li><a href="#">Pet Sitting</a></li>
+            <li><a href="#">Vaccinations</a></li>
+            <li><a href="#">Pet Dentistry</a></li>
+        </ul>
+    </div>
+
+    
+    <div class="col-md-3 mb-4">
+        <h5>Quick Links</h5>
+        <ul>
+            <li><a href="#">Company History</a></li>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Contact Us</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+        </ul>
+    </div>
+
+    
+    <div class="col-md-3 mb-4">
+        <h5>Newsletter</h5>
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+            sed do eiusmod.
+        </p>
+
+        <div class="newsletter d-flex">
+            <input type="email" placeholder="Email Address">
+            <button><i class="fa-solid fa-paper-plane"></i></button>
+        </div>
+    </div>
+
+</div>
+</div>
+
+
+<div class="footer-bottom">
+    Copyrights © 2026. All rights reserved. Roger. Designed by Zozothemes
+</div>
+
+</footer>
+</body>
+</html>
+
+</html>

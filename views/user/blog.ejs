@@ -1,0 +1,623 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Pet Care Website</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet">
+
+<style>
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+}
+
+
+.top-header {
+  padding: 15px 50px;
+}
+
+.logo {
+  font-size: 26px;
+  font-weight: bold;
+  color: #1f2d5a;
+}
+
+.logo span {
+  color: #f4a300;
+}
+
+.header-info i {
+  color: #f4a300;
+  font-size: 26px;
+}
+
+
+.navbar {
+  background: #1f2d5a;
+}
+
+.navbar-nav .nav-link {
+  color: white;
+  font-weight: 500;
+  margin: 0 8px;
+}
+
+.navbar-nav .nav-link.active,
+.navbar-nav .nav-link:hover {
+  color: #f4a300;
+}
+
+.social-icons i {
+  color: white;
+  margin-left: 10px;
+  font-size: 18px;
+}
+
+
+
+.hero img {
+  max-width: 100%;
+}
+</style>
+</head>
+
+<body>
+
+
+<div class="top-header d-flex justify-content-between align-items-center">
+  <div class="logo">
+    <span>+</span> ROGER <small class="text-muted">Your Loving Pet Care</small>
+  </div>
+
+  <div class="d-flex gap-4">
+    <div class="header-info d-flex align-items-center gap-2">
+      <i class="fa-solid fa-headset"></i>
+      <div>
+        <strong>Call Us Now</strong><br>
+        +(528) 456-7592
+      </div>
+    </div>
+
+    <div class="header-info d-flex align-items-center gap-2">
+      <i class="fa-regular fa-clock"></i>
+      <div>
+        <strong>Opening Hours</strong><br>
+        Mon - Sat 9.00 - 19.00
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ================= NAVBAR ================= -->
+<nav class="navbar navbar-expand-lg">
+  <div class="container">
+   <ul class="navbar-nav me-auto">
+      <li class="nav-item"><a class="nav-link active" href="/">Home</a></li>
+      <li class="nav-item"><a class="nav-link" href="/about">About</a></li>
+      <li class="nav-item"><a class="nav-link" href="/services">Services</a></li>
+      <li class="nav-item"><a class="nav-link" href="/our_team">Our Team</a></li>
+      <li class="nav-item"><a class="nav-link" href="/blog">Blog</a></li>
+      <li class="nav-item"><a class="nav-link" href="/contact">Contact Us</a></li>
+    </ul>
+
+    <div class="social-icons">
+      <i class="fab fa-facebook-f"></i>
+      <i class="fab fa-x-twitter"></i>
+      <i class="fab fa-instagram"></i>
+      <i class="fab fa-linkedin-in"></i>
+      <i class="fab fa-youtube"></i>
+    </div>
+  </div>
+</nav>
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+
+             <!-- About image -->
+
+
+             
+<style>
+
+.about-banner {
+  background: linear-gradient(90deg, #05060d, #0b0e1a);
+  height: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: #fff;
+}
+
+.about-banner h1 {
+  font-size: 42px;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.breadcrumb-custom {
+  font-size: 16px;
+}
+
+.breadcrumb-custom a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.breadcrumb-custom span {
+  color: #f9b000;
+  font-weight: 500;
+}
+</style>
+</head>
+
+<body>
+
+<!-- About Us Section -->
+<section class="about-banner">
+  <div>
+    <h1>Details </h1>
+    <div class="breadcrumb-custom">
+      <a href="#">Home</a> &nbsp;  &nbsp; <span></span>
+    </div>
+  </div>
+</section>
+
+
+
+<!-- dog details  -->
+
+
+
+
+<style>
+body{
+  background:#f8fafc;
+}
+
+
+.dog-card{
+  border:none;
+  border-radius:15px;
+  overflow:hidden;
+  transition:0.4s;
+  height:100%;
+}
+
+.dog-card:hover{
+  transform: translateY(-10px);
+  box-shadow:0 15px 40px rgba(0,0,0,0.15);
+}
+
+
+.dog-card img{
+  height:250px;
+  object-fit:cover;
+}
+
+
+.dog-card .card-body{
+  padding:20px;
+}
+
+.dog-name{
+  font-size:22px;
+  font-weight:700;
+  color:#22355a;
+}
+
+
+.card-body h6{
+  font-weight:600;
+  margin-top:15px;
+  color:#ffb703;
+}
+
+
+.card-body p{
+  color:#555;
+  font-size:15px;
+  margin-bottom:5px;
+}
+</style>
+</head>
+
+<body>
+
+<div class="container py-5">
+  <div class="row g-4">
+
+    
+    <div class="col-lg-4 col-md-6">
+      <div class="card dog-card">
+        <img src="imagess/golden.jpg" alt="Golden Retriever">
+        <div class="card-body">
+          <div class="dog-name">Golden Retriever</div>
+
+          <h6>Food They Eat</h6>
+          <p>Chicken, rice, dry dog food, vegetables</p>
+
+          <h6>About Dog</h6>
+          <p>Golden Retrievers are friendly, intelligent, and very loyal dogs. They are great family pets.</p>
+
+          <h6>Care & Healthy Food</h6>
+          <p>✔ High-protein food<br>
+             ✔ Omega-3 rich food<br>
+             ❌ Avoid chocolate & junk food</p>
+        </div>
+      </div>
+    </div>
+
+    
+    <div class="col-lg-4 col-md-6">
+      <div class="card dog-card">
+        <img src="imagess/Beagle.jpg" alt="Beagle">
+        <div class="card-body">
+          <div class="dog-name">Beagle</div>
+
+          <h6>Food They Eat</h6>
+          <p>Fish, eggs, brown rice, dry kibble</p>
+
+          <h6>About Dog</h6>
+          <p>Beagles are playful, curious dogs with a strong sense of smell and friendly nature.</p>
+
+          <h6>Care & Healthy Food</h6>
+          <p>✔ Balanced diet<br>
+             ✔ Fresh water always<br>
+             ❌ Avoid fatty food</p>
+        </div>
+      </div>
+    </div>
+
+    
+    <div class="col-lg-4 col-md-6">
+      <div class="card dog-card">
+        <img src="imagess/Pomeranian.jpg" alt="Pomeranian">
+        <div class="card-body">
+          <div class="dog-name">Pomeranian</div>
+
+          <h6>Food They Eat</h6>
+          <p>Boiled chicken, soft dry food, fruits</p>
+
+          <h6>About Dog</h6>
+          <p>Pomeranians are small, energetic dogs known for their fluffy coat and alert behavior.</p>
+
+          <h6>Care & Healthy Food</h6>
+          <p>✔ Small portion meals<br>
+             ✔ Vitamins & minerals<br>
+             ❌ Avoid hard bones</p>
+        </div>
+      </div>
+    </div>
+
+
+
+
+
+
+
+
+
+   
+<div class="col-lg-4 col-md-6">
+  <div class="card dog-card">
+    <img src="imagess/cat4.jpg" alt="Persian Cat">
+    <div class="card-body">
+      <div class="dog-name">Persian Cat</div>
+
+      <h6>Food They Eat</h6>
+      <p>Wet cat food, boiled chicken, tuna</p>
+
+      <h6>About Cat</h6>
+      <p>Persian cats are calm, loving, and known for their long fluffy fur and sweet nature.</p>
+
+      <h6>Care & Healthy Food</h6>
+      <p>✔ High-quality wet food<br>
+         ✔ Regular grooming<br>
+         ❌ Avoid milk & salty food</p>
+    </div>
+  </div>
+</div>
+
+
+<div class="col-lg-4 col-md-6">
+  <div class="card dog-card">
+    <img src="imagess/cat5.jpg" alt="Siamese Cat">
+    <div class="card-body">
+      <div class="dog-name">Siamese Cat</div>
+
+      <h6>Food They Eat</h6>
+      <p>Dry kibble, fish, eggs</p>
+
+      <h6>About Cat</h6>
+      <p>Siamese cats are active, intelligent, and very vocal. They love human attention.</p>
+
+      <h6>Care & Healthy Food</h6>
+      <p>✔ Protein-rich diet<br>
+         ✔ Daily playtime<br>
+         ❌ Avoid chocolate & onion</p>
+    </div>
+  </div>
+</div>
+
+
+<div class="col-lg-4 col-md-6">
+  <div class="card dog-card">
+    <img src="imagess/cat6.jpg" alt="Maine Coon">
+    <div class="card-body">
+      <div class="dog-name">Maine Coon</div>
+
+      <h6>Food They Eat</h6>
+      <p>Meat-based food, salmon, dry food</p>
+
+      <h6>About Cat</h6>
+      <p>Maine Coon cats are large, friendly, and gentle. They are great family pets.</p>
+
+      <h6>Care & Healthy Food</h6>
+      <p>✔ Omega-3 rich food<br>
+         ✔ Regular brushing<br>
+         ❌ Avoid bones & spicy food</p>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+<div class="col-lg-4 col-md-6">
+  <div class="card dog-card">
+    <img src="imagess/parrot.jpg" alt="Parrot">
+    <div class="card-body">
+      <div class="dog-name">Parrot</div>
+
+      <h6>Food They Eat</h6>
+      <p>Seeds, fruits, vegetables, nuts</p>
+
+      <h6>About Bird</h6>
+      <p>Parrots are intelligent, colorful birds known for mimicking sounds and strong bonding.</p>
+
+      <h6>Care & Healthy Food</h6>
+      <p>✔ Fresh fruits daily<br>
+         ✔ Clean water<br>
+         ❌ Avoid avocado & chocolate</p>
+    </div>
+  </div>
+</div>
+
+
+<div class="col-lg-4 col-md-6">
+  <div class="card dog-card">
+    <img src="imagess/Goldfish.jpg" alt="Goldfish">
+    <div class="card-body">
+      <div class="dog-name">Goldfish</div>
+
+      <h6>Food They Eat</h6>
+      <p>Fish flakes, pellets, vegetables</p>
+
+      <h6>About Fish</h6>
+      <p>Goldfish are peaceful aquatic pets and easy to maintain in clean freshwater tanks.</p>
+
+      <h6>Care & Healthy Food</h6>
+      <p>✔ Feed small portions<br>
+         ✔ Clean tank weekly<br>
+         ❌ Avoid overfeeding</p>
+    </div>
+  </div>
+</div>
+
+
+<div class="col-lg-4 col-md-6">
+  <div class="card dog-card">
+    <img src="imagess/rabbit.jpg" alt="Rabbit">
+    <div class="card-body">
+      <div class="dog-name">Rabbit</div>
+
+      <h6>Food They Eat</h6>
+      <p>Hay, leafy greens, carrots</p>
+
+      <h6>About Rabbit</h6>
+      <p>Rabbits are gentle, social animals that enjoy human interaction and calm environments.</p>
+
+      <h6>Care & Healthy Food</h6>
+      <p>✔ Fresh hay always<br>
+         ✔ Clean living space<br>
+         ❌ Avoid sugary food</p>
+    </div>
+  </div>
+</div>
+
+
+
+  </div>
+</div>
+
+<style>
+.footer {
+    background: #23395d;
+    color: #fff;
+    padding: 70px 0 0;
+    margin-top:8%;
+}
+
+.footer-logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.footer-logo i {
+    font-size: 30px;
+    color: #ffb703;
+}
+
+.footer-logo h4 {
+    margin: 0;
+    font-weight: 700;
+}
+
+.footer p {
+    color: #cfd6e0;
+    font-size: 15px;
+    line-height: 1.7;
+}
+
+.footer h5 {
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.footer ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer ul li {
+    margin-bottom: 12px;
+}
+
+.footer ul li a {
+    color: #cfd6e0;
+    text-decoration: none;
+}
+
+.footer ul li a::before {
+    content: "›";
+    color: #ffb703;
+    margin-right: 8px;
+}
+
+.footer ul li a:hover {
+    color: #ffb703;
+}
+
+
+.social-icons a {
+    width: 40px;
+    height: 40px;
+    border: 2px solid #ffb703;
+    border-radius: 50%;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    color: #ffb703;
+    margin-right: 10px;
+    text-decoration: none;
+}
+
+
+.newsletter input {
+    border-radius: 5px 0 0 5px;
+    border: none;
+    padding: 12px;
+    width: 100%;
+}
+
+.newsletter button {
+    background: #ffb703;
+    border: none;
+    padding: 0 20px;
+    color: #23395d;
+    border-radius: 0 5px 5px 0;
+}
+
+
+.footer-bottom {
+    border-top: 1px solid rgba(255,255,255,0.1);
+    margin-top: 50px;
+    padding: 20px 0;
+    text-align: center;
+    font-size: 14px;
+    color: #cfd6e0;
+}
+</style>
+</head>
+
+<body>
+
+<footer class="footer">
+<div class="container">
+<div class="row">
+
+    
+    <div class="col-md-3 mb-4">
+        <div class="footer-logo mb-3">
+            <i class="fa-solid fa-paw"></i>
+            <div>
+                <h4>ROGER</h4>
+                <small>Your Loving Pet Care</small>
+            </div>
+        </div>
+        <p>
+            Lorem ipsum dolor sit amet, elit. Aenean ligula eget dolor.
+            Lorem ipsum dolor sit amet, consectetur to adipiscing elit.
+        </p>
+
+        <div class="social-icons mt-3">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-x-twitter"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+        </div>
+    </div>
+
+    
+    <div class="col-md-3 mb-4">
+        <h5>Services</h5>
+        <ul>
+            <li><a href="#">Dog Walking</a></li>
+            <li><a href="#">Overnight Care</a></li>
+            <li><a href="#">Pet Sitting</a></li>
+            <li><a href="#">Vaccinations</a></li>
+            <li><a href="#">Pet Dentistry</a></li>
+        </ul>
+    </div>
+
+    
+    <div class="col-md-3 mb-4">
+        <h5>Quick Links</h5>
+        <ul>
+            <li><a href="#">Company History</a></li>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Contact Us</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+        </ul>
+    </div>
+
+   
+    <div class="col-md-3 mb-4">
+        <h5>Newsletter</h5>
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+            sed do eiusmod.
+        </p>
+
+        <div class="newsletter d-flex">
+            <input type="email" placeholder="Email Address">
+            <button><i class="fa-solid fa-paper-plane"></i></button>
+        </div>
+    </div>
+
+</div>
+</div>
+
+
+<div class="footer-bottom">
+    Copyrights © 2026. All rights reserved. Roger. Designed by Zozothemes
+</div>
+
+</footer>
+
+
+</body>
+</body>
+</html>
